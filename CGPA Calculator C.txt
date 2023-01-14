@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   float grade1, grade2, grade3, grade4, grade5, grade6, grade7;
+   float credit1, credit2, credit3, credit4, credit5, credit6, credit7;
+   float tot_cred;
+   double cgpa1,cgpa;
+    
+   cout<<"Enter grade in subject 1: ";
+   cin>>grade1;
+   cout<<"Enter credits of subject 1: ";
+   cin>>credit1;
+   
+   cout<<"Enter grade in subject 2: ";
+   cin>>grade2;
+   cout<<"Enter credits of subject 2: ";
+   cin>>credit2;
+   
+   cout<<"Enter grade in subject 3: ";
+   cin>>grade3;
+   cout<<"Enter credits of subject 3: ";
+   cin>>credit3;
+   
+   cout<<"Enter grade in subject 4: ";
+   cin>>grade4;
+   cout<<"Enter credits of subject 4: ";
+   cin>>credit4;
+   
+   cout<<"Enter grade in subject 5: ";
+   cin>>grade5;
+   cout<<"Enter credits of subject 5: ";
+   cin>>credit5;
+   
+   cout<<"Enter grade in subject 6: ";
+   cin>>grade6;
+   cout<<"Enter credits of subject 6: ";
+   cin>>credit6;
+   
+   cout<<"Enter grade in subject 7: ";
+   cin>>grade7;
+   cout<<"Enter credits of subject 7: ";
+   cin>>credit7;
+   
+   tot_cred = credit1 + credit2 + credit3 + credit4 + credit5 + credit6 + credit7;
+   
+   cgpa1 = (credit1*(10 - grade1)) + (credit2*(10 - grade2)) + (credit3*(10 - grade3)) + (credit4*(10 - grade4)) + (credit5*(10 - grade5)) +(credit6*(10 - grade6)) + (credit7*(10 - grade7));
+   
+   cgpa = 10 - (cgpa1/tot_cred);
+   cout<<"Your CGPA is ";
+   cout<<cgpa;
+  
+   return 0;
+}
